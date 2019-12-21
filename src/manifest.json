@@ -1,0 +1,16 @@
+{
+  "name": "Google Scholar List",
+  "version": "1.0",
+  "description": "Build an Extension!",
+  "manifest_version": 2,
+    "permissions": [
+                "downloads"
+                        ],
+  "content_scripts":[{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["jquery.js","content_scripts.js"]
+  }],
+  "browser_action":{
+    "default_popup": "popup.html"
+  }
+}
