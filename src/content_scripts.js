@@ -1,4 +1,3 @@
-$("body").prepend('<div class="txt">Hello World!</div>');
 chrome.runtime.onMessage.addListener(function(msg, sender, sendResponse) {
   console.log(msg.color);
   papers = [];
